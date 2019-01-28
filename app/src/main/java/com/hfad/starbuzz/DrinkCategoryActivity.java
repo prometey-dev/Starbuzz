@@ -24,6 +24,7 @@ public class DrinkCategoryActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drink_category);
+
         ListView listDrinks = (ListView)findViewById(R.id.list_drinks);
         SQLiteOpenHelper starbuzzDatabasehelper = new StarbuzzDatabaseHelper(this);
         try {
