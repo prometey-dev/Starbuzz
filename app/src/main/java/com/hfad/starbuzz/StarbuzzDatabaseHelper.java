@@ -43,6 +43,7 @@ class StarbuzzDatabaseHelper extends SQLiteOpenHelper {
                     R.drawable.cappuccino);
             insertDrink(db, "Filter", "Our best drip coffee", R.drawable.filter);
         }
+
         if (oldVersion < 2) {
             db.execSQL("ALTER TABLE DRINK ADD COLUMN FAVORITE NUMERIC;");
         }
