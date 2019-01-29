@@ -77,6 +77,7 @@ public class DrinkActivit extends Activity {
         protected Boolean doInBackground(Integer... drinks) {
             int drinkId = drinks[0];
             SQLiteOpenHelper starbuzzDatabaseHelper = new StarbuzzDatabaseHelper(DrinkActivit.this);
+
             try {
                 SQLiteDatabase db = starbuzzDatabaseHelper.getWritableDatabase();
                 db.update("DRINK", drinkValues,
